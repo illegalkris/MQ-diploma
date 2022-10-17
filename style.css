@@ -119,8 +119,14 @@
   }
   
   @media (max-width: 640px) {
+    .top-part {
+      justify-content: center;
+    }
+    
     .logo {
-      display: flex;
+      width: 75vw;
+      position: relative;
+      top: 200px;
     }
   }
 
@@ -218,6 +224,7 @@
   @media (max-width: 640px) {
     .title {
       font-size: 2.6rem;
+      margin-top: 220px;
     }
   }
   
@@ -239,6 +246,16 @@
 
   .trends-wrapper {
     margin-top: 55px;
+  }
+
+  @media (max-width: 6540px) {
+    .trends-wrapper {
+      margin-top: 38px;
+    }
+
+    .trend {
+      margin-top: 3px;
+    }
   }
 
   .trends-title {
@@ -388,12 +405,14 @@
 @media (min-width: 641px) and (max-width: 1200px) {
   .content-wrapper {
     padding: 0 35px;
+    margin-top: 50px;
   }
 }
 
 @media (max-width: 640px) {
   .content-wrapper {
     flex-wrap: wrap;
+    margin-top: 43px;
   }
 }
 
@@ -501,7 +520,19 @@
     display: flex;
     margin-top: 37px;
   }
+
+  @media (min-width: 641px) and (max-width: 1200px) {
+    .post-info {
+      margin-top: 30px;
+    }
+  }
   
+  @media (max-width: 640px) {
+    .post-info { 
+      margin-top: 20px;
+    }
+  }
+
   .post-date {
     font-family: OpenSansRegular, Arial, sans-serif;
     font-size: 1.3rem;
@@ -521,6 +552,18 @@
     font-size: 1.5rem;
   }
   
+  @media (min-width: 641px) and (max-width: 1200px) {
+    .post-content {
+      margin-top: 30px;
+    }
+  }
+
+  @media (max-width: 640px) {
+    .post-content {
+      margin-top: 20px;
+    }
+  }
+
   /*side-bar*/
   
   .side-bar {
@@ -567,12 +610,18 @@
   
   .latest-posts-title {
     font-family: OpenSansBold, Arial, sans-serif;
-    font-size: 14px;
+    font-size: 1.4rem;
     color: #000;
     text-transform: uppercase;
     text-align: center;
     margin-bottom: 14px;
     margin-top: 0;
+  }
+
+  @media (max-width: 640px) {
+    .latest-posts-title {
+      font-size: 1.6rem;
+    }
   }
   
   .latest-posts-title:after {
@@ -587,14 +636,14 @@
   
   .latest-post-date {
     font-family: OpenSansRegular, Arial, sans-serif;
-    font-size: 12px;
+    font-size: 1.2rem;
     color: #888;
     margin: 0;
   }
   
   .latest-post-title {
     font-family: OpenSansBold, Arial, sans-serif;
-    font-size: 14px;
+    font-size: 1.4rem;
     color: #000;
     text-transform: uppercase;
     margin: 0;
@@ -657,6 +706,12 @@
   .subscribe {
     margin-top: 62px;
   }
+
+  @media (max-width: 640px) {
+    .subscribe {
+      margin-top: 44px;
+    }
+  }
   
   .subscribe-title {
     font-family: OpenSansBold, Arial, sans-serif;
@@ -713,6 +768,12 @@
     margin-top: 62px;
   }
   
+  @media (max-width: 640px) {
+    .tags {
+      margin-top: 44px;
+    }
+  }
+
   .tags-title {
     font-family: OpenSansBold, Arial, sans-serif;
     font-size: 14px;
@@ -762,6 +823,12 @@
   .categories {
     margin-top: 62px;
   }
+
+  @media (max-width: 640px) {
+    .categories {
+      margin-top: 44px;
+    }
+  }
   
   .categories-list {
     padding-left: 0;
@@ -769,7 +836,7 @@
   
   .categories-title {
     font-family: OpenSansBold, Arial, sans-serif;
-    font-size: 14px;
+    font-size: 1.4rem;
     color: #000;
     text-transform: uppercase;
     text-align: center;
@@ -798,7 +865,7 @@
   
   .category-title {
     font-family: OpenSansBold, Arial, sans-serif;
-    font-size: 14px;
+    font-size: 1.4rem;
     color: #000;
   }
   
@@ -809,8 +876,7 @@
   
   .amount {
     font-family: OpenSansBold, Arial, sans-serif;
-    font-size: 12px;
-    font-size: 12px;
+    font-size: 1.2rem;
     color: #b59f5b;
     vertical-align: super;
   }
@@ -832,6 +898,18 @@
     color:#000;
     margin-top: 64px;
     margin-bottom: 29px;
+  }
+
+  @media (min-width: 641px) and (max-width: 1200px) {
+    .shop-title {
+      margin-top: 50px;
+    }
+  }
+
+  @media (max-width: 640px) {
+    .shop-title {
+      margin-top: 44px;
+    }
   }
 
   .shop-title:after {
@@ -868,6 +946,7 @@
 
 
   .shop-item-photo {
+    display: block;
     margin: 0 23px;
   }
 
@@ -988,6 +1067,18 @@
   .footer {
     margin-top: 64px;
   }
+
+  @media (min-width: 641px) and (max-width: 1200px) {
+    .footer {
+      margin-top: 50px;
+    }
+  }
+
+  @media (max-width: 640px) {
+    .footer {
+      margin-top: 34px;
+    }
+  }
   
   .footer-wrapper {
     max-width: 1170px;
@@ -999,6 +1090,18 @@
     background-color: #f4f7f6;
     margin-bottom: 74px;
     padding: 31px 0;
+  }
+
+  @media (min-width: 641px) and (max-width: 1200px) {
+    .footer-links {
+      margin-bottom: 60px;
+    }
+  }
+
+  @media (max-width: 640px) {
+    .footer-links {
+      margin-bottom: 54px;
+    }
   }
   
   .social-links {
