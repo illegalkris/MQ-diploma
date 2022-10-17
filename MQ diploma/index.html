@@ -51,7 +51,7 @@
                   <li><a href="#0" class="trend-tag">Lifestyle</a></li>
                   <li><a href="#0" class="trend-tag">Interior</a></li>
                 </ul>
-                <a href="#0" class="trend-title">Сейчас в тренде: сад  на подоконнике</a>  
+                <h4><a href="#0" class="trend-title">Сейчас в тренде: сад  на подоконнике</a></h4>  
               </div>
            </article>
 
@@ -60,7 +60,7 @@
                 <ul class="tags-trend-list">
                   <li><a href="#0" class="trend-tag">Food</a></li>
                 </ul>
-                <a href="#0" class="trend-title">Сыры на красивых  картинках из интернета: какие они на вкус?</a>
+                <h4><a href="#0" class="trend-title">Сыры на красивых  картинках из интернета: какие они на вкус?</a></h4>
               </div>
             </article>
 
@@ -70,7 +70,7 @@
                   <li><a href="#0" class="trend-tag">Lifestyle</a></li>
                   <li><a href="#0" class="trend-tag">Travel</a></li>
                 </ul>
-                <a href="#0" class="trend-title">Собираемся в первый поход в горы</a>
+                <h4><a href="#0" class="trend-title">Собираемся в первый поход в горы</a></h4>
               </div>
             </article>
 
@@ -80,7 +80,7 @@
                   <li><a href="#0" class="trend-tag">Food</a></li>
                   <li><a href="#0" class="trend-tag">Health</a></li>
                 </ul>
-                <a href="#0" class="trend-title">Сейчас в тренде: сколько витамина C в лимонах?</a>
+                <h4><a href="#0" class="trend-title">Сейчас в тренде: сколько витамина C в лимонах?</a></h4>
               </div>
             </article>
           </div>
@@ -287,8 +287,10 @@
                 </a>
               </div>
             </article>
+          </section>
+          <section class="search-section">
             <form class="search">
-              <label>
+              <label class="search-label">
                 <span class="description">Поле поиска</span>
                 <input type="search" class="search-field" placeholder="Найти..." required>
               </label>
@@ -307,7 +309,6 @@
               </label>
               <button class="button-sub">
                 Подписаться
-                <span class="description">Подписаться</span>
               </button>
             </form>
           </section>
@@ -363,7 +364,12 @@
             <h3 class="shop-title">Наши изделия</h3>
             <div class="shop-items">
               <article class="shop-item shop-item-first">
-                <img class="shop-item-photo" src="img/shop-item-desk1.jpg" alt="подушка">
+                <picture class="shop-item-photo">
+                  <source  media="(max-width: 640px)" srcset="img/shop-item-mobile1.jpg">
+                  <source media="(max-width: 1200px)" srcset="img/shop-item-tablet1.jpg">
+                  <source  media="(min-width: 1201px)" srcset="img/shop-item-desk1.jpg">
+                  <img class="shop-item-photo" src="img/shop-item-desk1.jpg" alt="подушка">
+                </picture>
                 <div class="shop-item-content">
                   <h4 class="shop-item-title">Подушки на диван</h4>
                   <p class="shop-item-description">Набор из двух подушек с модными принтами. 
@@ -376,8 +382,14 @@
                 </div>
               </article>
 
-              <article class="shop-item shop-item-second">
-                <img class="shop-item-photo" src="img/shop-item-desk2.jpg" alt="Кукла «Зайчик»">
+              <article  class="shop-item shop-item-second">
+                <picture  class="shop-item-photo">
+                  <source  media="(max-width: 640px)"srcset="img/shop-item-mobile2.jpg" >
+                  <source media="(max-width: 1200px)"  srcset="img/shop-item-tablet2.jpg">
+                  <source  media="(min-width: 1201px)" srcset="img/shop-item-desk2.jpg">
+                  <img class="shop-item-photo" src="img/shop-item-desk2.jpg" alt="Кукла «Зайчик»">
+                </picture>
+
                 <div class="shop-item-content">
                   <h4 class="shop-item-title">Кукла «Зайчик»</h4>
                   <p class="shop-item-description">Интерьерная рукодельная кукла «Зайчик», созданию которой посвящена
@@ -390,7 +402,13 @@
               </article>
 
               <article class="shop-item shop-item-third">
-                <img class="shop-item-photo" src="img/shop-item-desk3.jpg" alt="Шестиугольная рамка">
+                <picture class="shop-item-photo">
+                  <source  media="(max-width: 640px)" srcset="img/shop-item-mobile3.jpg">
+                  <source  media="(max-width: 1200px)" srcset="img/shop-item-tablet3.jpg">
+                  <source  media="(min-width: 1201px)" srcset="img/shop-item-desk3.jpg">
+                  <img  class="shop-item-photo" src="img/shop-item-desk3.jpg" alt="Шестиугольная рамка">
+                </picture>
+
                 <div class="shop-item-content">
                   <h4 class="shop-item-title">Шестиугольная рамка</h4>
                   <p class="shop-item-description">Необычная рамка для украшения дома из видео 
