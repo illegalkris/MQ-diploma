@@ -112,6 +112,7 @@
 
 
   .popup {
+    visibility: hidden;
     display: flex;
     position: fixed;
     top: 0;
@@ -129,6 +130,8 @@
 
     padding: 30px 25px;
     margin: 17px;
+    position: relative;
+    z-index: 100;
   }
 
   @media (max-width: 640px) {
@@ -148,6 +151,7 @@
     position: fixed;
     right: 17px;
     top: 100px;
+    z-index: 100;
 
     cursor: pointer;
   }
@@ -160,7 +164,7 @@
     transform: rotate(-45deg);
   }
 
-  body::before {
+  .popup::before {
     position: fixed;
     top: 0;
     left: 0;
@@ -169,7 +173,7 @@
     background-color: #000;
     opacity: 0.6;
     content: "";
-    z-index: 99;
+    z-index: 29;
   }
 
 
