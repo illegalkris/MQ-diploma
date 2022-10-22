@@ -107,7 +107,213 @@
       min-height: 100vh;
     }
   }
+
+  /*pop-up*/
+
+
+  .popup {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 100;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .form {
+    width: 390px;
+    background-color: #fff;
+
+    padding: 30px 25px;
+    margin: 17px;
+  }
+
+  @media (max-width: 640px) {
+    .form {
+      width: calc(100vw - 40px);
+      max-width: 320px;
+    }
+  }
+
+  .form::before,
+  .form::after {
+    content: "";
+    width: 22px;
+    height: 3px;
+    background-color: #fff;
+
+    position: fixed;
+    right: 17px;
+    top: 100px;
+
+    cursor: pointer;
+  }
+
+  .form::before {
+    transform: rotate(45deg);
+  }
+
+  .form::after {
+    transform: rotate(-45deg);
+  }
+
+  body::before {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #000;
+    opacity: 0.6;
+    content: "";
+    z-index: 99;
+  }
+
+
+  .form-title {
+    font-family: OpenSansBold, Arial, sans-serif;
+    font-size: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    color: #000;
+  }
+
+  .form-title:after {
+    content: "";
+    display: block;
+    width: 66px;
+    height: 3px;
+    background: #e1d9bd;
+    margin: 0 auto;
+    margin-top: 14px;
+  }
   
+
+
+  .form-hint {
+    display: block;
+    font-family: OpenSansRegular, Arial, sans-serif;
+    font-size: 13px;
+    color: #000;
+    margin-bottom: 9px;
+    margin-top: 34px;
+  }
+
+  .select-option {
+    width: 330px;
+    height: 48px;
+    background-color: #f4f7f6;
+    color: #797a7a;
+    border: 0;
+    padding: 17px;
+
+    -webkit-appearance: none;
+    -moz-appearance: none;
+
+    background-image: url(../svg/form-arrows.svg);
+    background-size: 9px;
+    background-repeat: no-repeat;
+    background-position: right 5px center;
+  }
+
+  @media (max-width: 640px) {
+    .select-option {
+      width: 100%;
+    }
+  }
+
+  .select-option:hover {
+    border: 1px solid #b59f5b;
+  }
+
+  .radio {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+
+    width: 18px;
+    height: 18px;
+    margin: 0;
+
+    cursor: pointer;
+  }
+
+  .radio-group {
+    background-image: url(../svg/form-empty-circle.svg);
+    background-repeat: no-repeat;
+    background-size: 18px;
+    background-position: left center;
+
+    display: inline-block;
+    height: 18px;
+    width: 50px;
+  }
+
+  .radio:checked {
+    background-image: url(../svg/form-circle.svg);
+    background-repeat: no-repeat;
+    background-size: 18px;
+    background-position: left center;
+  }
+
+  .radio-group-text {
+    font-size: 13px;
+  }
+
+
+  .field {
+    max-width: 330px;
+    min-width: 330px;
+    min-height: 131px;
+    max-height: 131px;
+
+    background-color: #f4f7f6;
+    color: #797a7a;
+    border: 0;
+    padding: 21px;
+  }
+
+  @media (max-width: 640px) {
+    .field {
+      max-width: 100%;
+      min-width: 100%;
+
+    }
+  }
+
+  .field:focus,
+  .field:hover {
+    border: 1px solid #b59f5b;
+    color: black;
+  }
+
+  .form-button {
+    width: 100%;
+    height: 48px;
+    background-color: #b59f5b;
+    border: 0;
+    margin-top: 25px;
+
+    font-family: OpenSansBold, Arial, sans-serif;
+    color: white;
+    text-transform: uppercase;
+    cursor: pointer;
+  }
+
+  @media (max-width: 640px) {
+    .form-button {
+      width: 100%;
+    }
+  }
+
+  .form-button:hover {
+    background-color: #323232;
+  }
+
+  /*Top-part*/
+
   .top-part {
     display: flex;
     justify-content: space-between;
@@ -940,9 +1146,23 @@
     }
 
     .shop-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
       width: calc(50% - 45px);
     }
   }
+
+  @media (min-width: 1201px) {
+    .shop-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 30%;
+    }
+  
+  }
+
 
 
   .shop-item-photo {
@@ -965,12 +1185,12 @@
   .shop-item-content {
     position: relative;
     top: -30px;
-    height: 267px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     border: 3px solid #b59f5b;
     padding: 21px;
+    flex-grow: 1;
   }
 
 
